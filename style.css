@@ -213,7 +213,7 @@ h3 {
 }
 
 #palette-green {
-  color:#21aa4e;
+  color:#26b455;
 }
 
 #palette-dark {
@@ -296,10 +296,59 @@ button:focus {
 /* Media Query - Large smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   #show-palette   {
-    margin-right: 50px;
+    margin-right: 20px;
+    padding: 20px;
   }
-  
   .container {
     flex-direction: column;
+  }
+  h1 {
+    font-size: 1.4rem;
+    width: 60%;
+    margin-left: 10px;
+  }
+}
+
+/* Media Query Small Mobile (450px)*/
+@media screen and (max-width: 450px) {
+  .show-modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  #show-palette {
+    padding: 25px 20px;
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+    width: 60%;
+    margin-left: 10px;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #show-palette {
+    padding: 20px 20px ;
+  }
+  h1 {
+    font-size: 1rem;
+    width: 50%;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  #show-palette {
+    padding: 30px 20px ;
+    margin-right: 5px;
+  }
+  h1 {
+    font-size: 1rem;
+    width: 40%;
+    margin-left: 5px;
   }
 }
